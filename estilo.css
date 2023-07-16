@@ -87,23 +87,27 @@ body {
   text-decoration: none;
 }
 /* -- NAV BAR END -- */
+/*________________________________________*/
 
+/* -- NAV BAR END -- */
+.container {
+  display:grid
+}
+
+
+/* -- NAV BAR END -- */
 /*________________________________________*/
 
 p {
     font-family: Helvetica;
-    color:#ffffff;
-    
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Helvetica;
     font-variant: small-caps;
-    color:#ffffff;
 }
 
-/* specifically for Bob image on homepage, but can apply elsewhere */
-.gr_ma {
+.grey_border {
     margin-top: 10px;
     margin-left: 10px;
     border: 5px solid #b3adad;
