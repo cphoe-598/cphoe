@@ -1,10 +1,22 @@
+/*______________________ GENERAL START _______________________*/
 body {
-    background-color:#1a2b56;
+  background-color:#1a2b56;
 }
 
-/*________________________________________*/
-/* -- WEB-HEADER SECTION START-- */
-            
+p {
+  font-family: Helvetica;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica;
+  /*
+  font-variant: small-caps;
+  */
+}
+/*______________________ GENERAL END _________________________*/
+
+
+/*______________________ WEB-HEADER END ______________________*/
 .header {
   overflow: hidden;
   background-color: #1a2b56;
@@ -54,10 +66,10 @@ body {
     float: none;
   }
 }
-/* -- WEB-HEADER SECTION END-- */
+/*______________________ WEB-HEADER END ______________________*/
 
 
-/* -- NAV BAR START -- */
+/*______________________ NAV BAR START _______________________*/
 .navbar {
   overflow: hidden;
   background-color: #b3adad;
@@ -86,29 +98,15 @@ body {
   border-radius: 20px;
   text-decoration: none;
 }
-/* -- NAV BAR END -- */
-/*________________________________________*/
-
-/* -- NAV BAR END -- */
-.container {
-  display:grid
-}
+/*______________________ NAV BAR END _________________________*/
 
 
-/* -- NAV BAR END -- */
-/*________________________________________*/
+/*______________________ LOGIN FORM START ____________________*/
 
-p {
-    font-family: Helvetica;
-}
+/*______________________ LOGIN FORM END ______________________*/
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Helvetica;
-    /*
-    font-variant: small-caps;
-    */
-}
 
+/*______________________ OTHER _______________________________*/
 .grey_border {
     margin-top: 10px;
     margin-left: 10px;
