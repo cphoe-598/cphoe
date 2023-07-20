@@ -104,11 +104,13 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Helvetica;
+    /*
     font-variant: small-caps;
+    */
 }
 
 .grey_border {
     margin-top: 10px;
     margin-left: 10px;
-    border: 5px solid #b3adad;
+    border: 5px solid #8184ba;
 }

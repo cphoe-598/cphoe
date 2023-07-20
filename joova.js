@@ -1,3 +1,6 @@
+document.write('Hello world!');
+
+/*
 function test_prompt() {
 
     // message to user before prompt
@@ -8,3 +11,4 @@ function test_prompt() {
     let age = prompt('Age?');
     document.write(age)
 }
+*/

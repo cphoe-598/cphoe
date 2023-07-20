@@ -3,6 +3,7 @@
     <head>
         <title>CP &ndash; Home</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset=""utf-8">
         <link rel="stylesheet" href="estilo.css">
     </head>
         <body>
@@ -33,7 +34,19 @@
             <p style="color:#ffffff">This is my website. If you somehow wound up here, then please leave. Thank you.<br />
             I am currently teaching myself how to build a website so this site will be a horrible mess once I get things going.</p>
             
-            <input type="button" onclick="test_prompt();">Test Prompt to see if I can write in JS</input>
+            
+            <div class="container grey_border" style="background-color:#ffffff; width:99%; height:98%;">
+                <form class="form" id="login">
+                    <h1 class="form_title">Login</h1>
+                    <div class="form_message form_message_error">USER/PASS combination not recognized.</div>
+                    <div class="form_input_group">
+                        <input type="text" class="form_input" autofocus placeholder="Username or email">
+                        <div class=""form_input_errorMessage">~ Error message ~</div>
+                    </div>
+                </form>
+            </div>
+
+
             <script src="joova.js"></script>
         </body>
 </html>
