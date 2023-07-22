@@ -77,6 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   font-variant: small-caps;
   color:#1a2b56;
   border-radius: 20px;
+  margin-bottom: 20px;
 }
 
 .navbar a {
@@ -101,6 +102,29 @@ h1, h2, h3, h4, h5, h6 {
 /*______________________ NAV BAR END _________________________*/
 
 
+/*______________________ CV FLEXBOX START ____________________*/
+/*
+.flex-container {
+  display:flex;
+}
+.flex-container > div {
+  margin:10px;
+  padding:20px
+  font: size 30px;
+}
+*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+.box {
+  flex: 1;
+}
+/*______________________ CV FLEXBOX END ______________________*/
+
+
 /*______________________ LOGIN FORM START ____________________*/
 
 /*______________________ LOGIN FORM END ______________________*/
@@ -111,4 +135,22 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 10px;
     margin-left: 10px;
     border: 5px solid #8184ba;
+}
+
+.hollow-button {
+  border: 2px solid aliceblue;
+  color: aliceblue;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.hollow-button:hover {
+  background-color: aliceblue;
+  color: #1a2b56;
+}
+
+.white-shadow {
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.437);
 }
