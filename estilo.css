@@ -3,7 +3,7 @@ body {
   background-color:#1a2b56;
 }
 
-p {
+p, ol, ul, dl {
   font-family: Helvetica;
 }
 
@@ -71,38 +71,40 @@ h1, h2, h3, h4, h5, h6 {
 
 /*______________________ NAV BAR START _______________________*/
 .navbar {
-  overflow: hidden;
-  background-color: #b3adad;
+  display: flex;
+  
+  /* background-color:#b3adad; */
+  background-image: linear-gradient(#1a2b56, #36466e, #1a2b56);
   font-family: Helvetica;
-  font-variant: small-caps;
-  color:#1a2b56;
-  border-radius: 20px;
+  color: aliceblue;
+  font-weight:bold;
+  border-radius: 12px;
   margin-bottom: 20px;
 }
 
 .navbar a {
   float: left;
-  font-size: 16px;
-  color: #1a2b56;;
+  font-size: 14px;
+  color: aliceblue;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 15px;
   text-decoration: none;
 }
 
 .navbar a:hover {
   float: left;
-  background-color: #ffffff;
-  font-size: 16px;
-  color: #1a2b56;
+  background-color: aliceblue;
+  font-size: 14px;
+  color: #000000;
   text-align: center;
-  padding: 14px 16px;
-  border-radius: 20px;
+  padding: 10px 15px;
+  border-radius: 12px;
   text-decoration: none;
 }
 /*______________________ NAV BAR END _________________________*/
 
 
-/*______________________ CV FLEXBOX START ____________________*/
+/*______________________ CV HEADER FLEXBOX START _____________*/
 /*
 .flex-container {
   display:flex;
@@ -113,16 +115,35 @@ h1, h2, h3, h4, h5, h6 {
   font: size 30px;
 }
 */
-.container {
+.cv-header-container {
   display: flex;
   justify-content: space-between;
   margin: 0 10px;
 }
 
-.box {
+.cv-header-box {
   flex: 1;
 }
-/*______________________ CV FLEXBOX END ______________________*/
+/*______________________ CV HEADER FLEXBOX END _______________*/
+
+
+/*______________________ CV MAIN GRID START __________________*/
+.cv-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: aliceblue;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+
+.cv-main > * {
+  flex:1;
+  background-color:#14203f;
+  padding-left:10px; 
+  margin: 5px;
+  border-radius:-20px;
+}
+/*______________________ CV MAIN GRID START __________________*/
 
 
 /*______________________ LOGIN FORM START ____________________*/
@@ -153,4 +174,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .white-shadow {
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.437);
+}
+
+.obnoxious-header {
+    background: linear-gradient(blue,red, orange, yellow, green, blue, violet);
+    /*
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+    font-size: 50px;
+    padding:5px;
 }
