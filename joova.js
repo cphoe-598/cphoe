@@ -1,14 +1,16 @@
-document.write('Hello world!');
-
-/*
-function test_prompt() {
-
-    // message to user before prompt
-    document.write('You must be 47 years or older to access this site.\nHowever, I don\'t know how to code for the site to prevent access if you aren\'t that age.');
-    document.write('Please respond to the prompt'.bold);
-
-    // prompt user, then print user input
-    let age = prompt('Age?');
-    document.write(age)
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class, to highlight the button that controls the panel */
+        this.classList.toggle("active");
+        
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
 }
-*/
